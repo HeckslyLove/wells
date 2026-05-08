@@ -21,96 +21,94 @@
             padding: 20px 16px;
         }
 
-        /* Карточка — максимально компактная */
         .card {
-            max-width: 400px;
+            max-width: 420px;
             width: 100%;
             background: white;
-            border-radius: 36px;
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05), 0 0 0 1px rgba(0, 0, 0, 0.02);
+            border-radius: 40px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04), 0 0 0 1px rgba(0, 0, 0, 0.02);
             overflow: hidden;
-            transition: all 0.2s ease;
         }
 
-        /* Верхний брендинг */
         .top-brand {
             padding: 28px 24px 12px 24px;
             text-align: center;
-            border-bottom: 1px solid #f0f0f0;
+            border-bottom: 1px solid #f0f2f5;
         }
 
         .company-name {
-            font-size: 28px;
+            font-size: 32px;
             font-weight: 700;
-            letter-spacing: -0.3px;
+            letter-spacing: -0.5px;
             background: linear-gradient(135deg, #1E2A3A, #2C3E50);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
-            display: inline-block;
         }
 
         .tagline {
             font-size: 14px;
             color: #5b6e8c;
-            margin-top: 6px;
-            font-weight: 450;
-            background: #f1f5f9;
+            margin-top: 8px;
+            font-weight: 500;
+            background: #f0f4f9;
             display: inline-block;
-            padding: 4px 12px;
-            border-radius: 30px;
+            padding: 4px 14px;
+            border-radius: 40px;
         }
 
-        /* контент */
         .content {
-            padding: 24px 24px 32px 24px;
+            padding: 24px 24px 32px;
         }
 
-        /* главная ссылка на телеграм бота */
-        .tg-button {
+        /* общий стиль для кнопок-ссылок */
+        .contact-btn {
             display: flex;
             align-items: center;
             justify-content: center;
             gap: 12px;
-            background: linear-gradient(105deg, #2AAB6E 0%, #1D7A46 100%);
-            padding: 16px 20px;
+            padding: 14px 20px;
             border-radius: 60px;
             text-decoration: none;
-            color: white;
             font-weight: 600;
-            font-size: 18px;
+            font-size: 17px;
             transition: transform 0.12s, box-shadow 0.2s;
-            box-shadow: 0 6px 12px -8px rgba(0,0,0,0.2);
-            margin-bottom: 20px;
+            margin-bottom: 16px;
             border: none;
+            width: 100%;
+            background: #fff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04), 0 0 0 1px #e2e8f0;
         }
 
-        .tg-button:active {
+        .contact-btn:active {
             transform: scale(0.97);
         }
 
-        .tg-icon {
-            font-size: 28px;
-            filter: drop-shadow(0 1px 1px rgba(0,0,0,0.1));
+        .tg-btn {
+            background: #2AAB6E;
+            background: linear-gradient(105deg, #2AAB6E 0%, #1D7A46 100%);
+            box-shadow: 0 4px 12px rgba(42, 171, 110, 0.25), 0 0 0 1px rgba(0,0,0,0.02);
+            color: white;
         }
 
-        .tg-text {
-            letter-spacing: -0.2px;
+        .vk-btn {
+            background: #2787F5;
+            background: linear-gradient(105deg, #2787F5 0%, #1A69C4 100%);
+            box-shadow: 0 4px 12px rgba(39, 135, 245, 0.25), 0 0 0 1px rgba(0,0,0,0.02);
+            color: white;
         }
 
-        /* почтовая карточка */
         .email-block {
             background: #f0f9fe;
             border-radius: 60px;
             padding: 12px 20px;
-            margin-bottom: 20px;
+            margin: 8px 0 20px 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
             gap: 10px;
             border: 1px solid #d9eaf1;
-            transition: all 0.2s;
         }
 
         .email-info {
@@ -121,30 +119,28 @@
         }
 
         .email-icon {
-            font-size: 24px;
+            font-size: 22px;
             background: white;
-            width: 44px;
-            height: 44px;
+            width: 42px;
+            height: 42px;
             display: flex;
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
         }
 
         .email-address {
-            font-size: 16px;
+            font-size: 15px;
             font-weight: 520;
             color: #115e73;
             word-break: break-all;
             font-family: monospace;
-            letter-spacing: -0.2px;
         }
 
         .copy-btn {
             background: white;
             border: none;
-            padding: 8px 14px;
+            padding: 8px 16px;
             border-radius: 40px;
             font-size: 13px;
             font-weight: 500;
@@ -153,7 +149,6 @@
             display: flex;
             align-items: center;
             gap: 6px;
-            transition: 0.1s;
             box-shadow: 0 1px 2px rgba(0,0,0,0.05);
             font-family: inherit;
         }
@@ -164,63 +159,55 @@
         }
 
         .badge-note {
-            font-size: 13px;
+            font-size: 12px;
             text-align: center;
             background: #eef2ff;
-            padding: 8px 12px;
+            padding: 8px 14px;
             border-radius: 40px;
             color: #2c3e66;
-            margin-bottom: 22px;
+            margin: 12px auto 20px;
             display: inline-block;
             width: auto;
-            margin-left: auto;
-            margin-right: auto;
         }
 
-        /* будущие контакты */
         .future-plans {
             background: #F9FAFE;
             border-radius: 28px;
             padding: 18px 20px;
-            margin-top: 12px;
+            margin-top: 20px;
             border: 1px solid #eef2f8;
         }
 
         .future-title {
-            font-size: 14px;
+            font-size: 13px;
             font-weight: 600;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.6px;
             color: #4b6e8a;
             margin-bottom: 14px;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 8px;
         }
 
         .future-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 14px;
+            gap: 12px;
             align-items: center;
         }
 
         .future-item {
             background: white;
             border-radius: 40px;
-            padding: 8px 16px;
-            font-size: 14px;
+            padding: 6px 14px;
+            font-size: 13px;
             font-weight: 500;
             display: inline-flex;
             align-items: center;
             gap: 8px;
             color: #1e2f3f;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
             border: 1px solid #e2e8f0;
-        }
-
-        .future-item span:first-child {
-            font-size: 18px;
         }
 
         .soon-badge {
@@ -230,7 +217,6 @@
             font-size: 10px;
             font-weight: 500;
             color: #3c6b47;
-            margin-left: 6px;
         }
 
         hr {
@@ -247,7 +233,6 @@
             margin-top: 18px;
         }
 
-        /* адаптив */
         @media (max-width: 450px) {
             body {
                 padding: 12px;
@@ -255,22 +240,12 @@
             .content {
                 padding: 20px;
             }
-            .tg-button {
-                padding: 14px 16px;
-                font-size: 17px;
-            }
-            .email-block {
-                padding: 10px 16px;
+            .contact-btn {
+                padding: 12px 16px;
+                font-size: 16px;
             }
             .email-address {
-                font-size: 14px;
-            }
-            .future-item {
                 font-size: 13px;
-                padding: 6px 14px;
-            }
-            .company-name {
-                font-size: 26px;
             }
         }
     </style>
@@ -279,54 +254,58 @@
 <div class="card">
     <div class="top-brand">
         <div class="company-name">Well's</div>
-        <div style="margin-top: 6px;">
-            <span class="tagline">📚 студенческие работы</span>
-        </div>
+        <div class="tagline">📚 студенческие работы</div>
     </div>
     <div class="content">
-        <!-- Telegram бот (активная ссылка) -->
-        <a href="https://t.me/welldones_bot" target="_blank" rel="noopener noreferrer" class="tg-button">
-            <span class="tg-icon">🤖</span>
-            <span class="tg-text">Написать в Telegram</span>
-            <span style="font-size: 20px;">→</span>
+        <!-- Telegram бот -->
+        <a href="https://t.me/wells_student_bot" target="_blank" rel="noopener noreferrer" class="contact-btn tg-btn">
+            <span style="font-size: 24px;">🤖</span>
+            <span>Telegram — написать</span>
+            <span style="font-size: 18px;">→</span>
         </a>
 
-        <!-- ПОЧТА (добавлена по запросу: a.wiki@yandex.ru) -->
+        <!-- ВК бот — обновленная ссылка (написать в сообщество) -->
+        <a href="https://vk.com/write-238483186" target="_blank" rel="noopener noreferrer" class="contact-btn vk-btn">
+            <span style="font-size: 24px;">📘</span>
+            <span>ВКонтакте — бот</span>
+            <span style="font-size: 18px;">→</span>
+        </a>
+
+        <!-- Почта (остаётся) -->
         <div class="email-block" id="emailBlock">
             <div class="email-info">
                 <div class="email-icon">📧</div>
                 <div class="email-address">a.wiki@yandex.ru</div>
             </div>
-            <button class="copy-btn" id="copyEmailBtn">
-                📋 Копировать
-            </button>
+            <button class="copy-btn" id="copyEmailBtn">📋 Копировать</button>
         </div>
 
-        <!-- небольшая заметка -->
-        <div style="text-align: center; margin-bottom: 20px;">
+        <!-- плашка-напоминание -->
+        <div style="text-align: center;">
             <div class="badge-note">
-                📲 Telegram отвечает быстрее • Почта тоже работает
+                💬 Telegram и ВК отвечают быстрее • Почта тоже работает
             </div>
         </div>
 
-        <!-- будущие контакты (ВК и др.) -->
+        <!-- что в планах (уже есть вк, но пусть будет как дорожная карта) -->
         <div class="future-plans">
             <div class="future-title">
-                <span>📋</span> Скоро подключим
+                <span>📌</span> Актуальные каналы связи
             </div>
             <div class="future-list">
                 <div class="future-item">
-                    <span>📘</span> ВКонтакте
-                    <span class="soon-badge">в планах</span>
+                    <span>✅</span> Telegram
                 </div>
                 <div class="future-item">
-                    <span>✉️</span> Доп. почта
-                    <span class="soon-badge">готовится</span>
+                    <span>✅</span> ВКонтакте (бот)
+                </div>
+                <div class="future-item">
+                    <span>✉️</span> a.wiki@yandex.ru
                 </div>
             </div>
             <div style="font-size: 12px; color: #62748c; margin-top: 14px; border-left: 2px solid #cbdde9; padding-left: 12px;">
-                Пока Telegram + почта a.wiki@yandex.ru.<br>
-                ВКонтакте и новые каналы связи — совсем скоро.
+                Работаем через ботов — быстрый ответ на заказы. <br>
+                По почте отвечаем в течение дня.
             </div>
         </div>
 
@@ -338,21 +317,19 @@
 </div>
 
 <script>
-    // Копирование email в буфер обмена (работает на любых устройствах)
+    // копирование почты
     const copyBtn = document.getElementById('copyEmailBtn');
     const emailAddress = 'a.wiki@yandex.ru';
 
     copyBtn.addEventListener('click', async () => {
         try {
             await navigator.clipboard.writeText(emailAddress);
-            // временная обратная связь
             const originalText = copyBtn.innerHTML;
             copyBtn.innerHTML = '✅ Скопировано!';
             setTimeout(() => {
                 copyBtn.innerHTML = originalText;
             }, 2000);
         } catch (err) {
-            // fallback для старых браузеров
             const textarea = document.createElement('textarea');
             textarea.value = emailAddress;
             document.body.appendChild(textarea);
@@ -366,23 +343,18 @@
         }
     });
 
-    // при клике на сам email-блок тоже можно копировать (удобно)
+    // клик по блоку email тоже копирует
     const emailBlock = document.getElementById('emailBlock');
     emailBlock.addEventListener('click', (e) => {
-        // если кликнули именно на кнопку, не дублируем (уже вызвано выше)
         if (e.target === copyBtn || copyBtn.contains(e.target)) return;
-        // иначе копируем адрес
         navigator.clipboard.writeText(emailAddress).then(() => {
             const original = copyBtn.innerHTML;
             copyBtn.innerHTML = '✅ Скопировано!';
             setTimeout(() => {
                 copyBtn.innerHTML = original;
             }, 1500);
-        }).catch(() => {
-            // тихо падаем
-        });
+        }).catch(() => {});
     });
-    console.log('Well\'s page — почта a.wiki@yandex.ru добавлена, Telegram активен');
 </script>
 </body>
 </html>
